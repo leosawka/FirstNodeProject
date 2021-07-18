@@ -11,4 +11,8 @@ router.get('/contact', (req, res) => {
     res.render('contact.html', { title: 'Contact info'});
 });
 
+router.get('/about', (req, res) => {
+    res.render('about.html', { title: 'Acerca de mi'});
+});
+
 module.exports = router;

@@ -8,7 +8,7 @@ router.get('/', (req, res) => {
 });
 
 router.get('/contact', (req, res) => {
-    res.render('contact.html', { title: 'Contact info'});
+    res.render('contact.html', { title: 'Contacto'});
 });
 
 router.get('/about', (req, res) => {

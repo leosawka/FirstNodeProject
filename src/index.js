@@ -16,6 +16,7 @@ server.use(require('./routes/'));
 
 // Static files
 server.use(express.static(path.join(__dirname, '/public')));
+server.use('LS.svg', express.static('img/LS.svg')); // Establecer la ruta para el icono de la página
 
 // Listening server
 server.listen(server.get('port'), () => {

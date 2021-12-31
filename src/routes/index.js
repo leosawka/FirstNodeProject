@@ -15,4 +15,8 @@ router.get('/about', (req, res) => {
     res.render('about.html', { title: 'Acerca de mi'});
 });
 
+router.get('/404notFound', (req, res) => {
+    res.render('404notFound.html', { title: 'Page not found'});
+});
+
 module.exports = router;

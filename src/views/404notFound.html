@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>404 page not found</title>
+    <link rel="stylesheet" type="text/css" href="css/404notFound.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">      
+  </head>
+  <body>
+    <div id="container">
+      <div class="content">
+        <h2>404</h2>
+        <h4>Page not found</h4>
+        <p>The page you were looking doesn't exists or are not avalible. Maybe you mistyped the address or the page may have moved.</p>
+        <a href="/">Back to home</a>
+      </div>
+    </div>
+    <script>
+      var container = document.getElementById('container');
+      window.onmousemove = function(e){
+        var x = - e.clientX / 5,
+            y = - e.clientY / 5;
+        container.style.backgroundPositionX = x + 'px';
+        container.style.backgroundPositionY = y + 'px';
+      }
+    </script>
+  </body>
+</html>
